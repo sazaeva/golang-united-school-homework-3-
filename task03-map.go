@@ -12,8 +12,8 @@ func sortMapValues(input map[int]string) (result []string) {
 	}
 	sort.Ints(keys)
 	for _, k := range keys {
-		fmt.Printf("%s ", input[k])
-
+		result = append(result, input[k])
+		//fmt.Printf("%s ", input[k])
 	}
-	return
+	return result
 }
