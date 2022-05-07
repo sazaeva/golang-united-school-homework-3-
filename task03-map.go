@@ -12,7 +12,7 @@ func sortMapValues(input map[int]string) (result []string) {
 	}
 	sort.Ints(keys)
 	for _, k := range keys {
-		fmt.Println(k, input[k])
+		fmt.Println(input[k])
 
 	}
 	return
