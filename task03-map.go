@@ -1,10 +1,8 @@
 package homework
 
 import (
-	"fmt"
 	"sort"
 )
-
 func sortMapValues(input map[int]string) (result []string) {
 	keys := make([]int, 0, len(input))
 	for k := range input {
@@ -13,7 +11,6 @@ func sortMapValues(input map[int]string) (result []string) {
 	sort.Ints(keys)
 	for _, k := range keys {
 		result = append(result, input[k])
-		//fmt.Printf("%s ", input[k])
 	}
 	return result
 }
