@@ -5,7 +5,7 @@ func reverse(input []int64) (result []int64) {
 		j := len(input) - 1 - i
 		input[i], input[j] = input[j], input[i]
 	}
-	result = make([]int64, 4)
+	result = make([]int64, len(input))
 	copy(result, input)
 	return result
 }
